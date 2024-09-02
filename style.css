@@ -6,6 +6,7 @@
 
 body {
   background-color: #181818;
+  font-family: "Inter", system-ui;
 }
 
 header {
@@ -19,6 +20,10 @@ header img {
   width: 12vw;
 }
 
+main {
+  padding: 3rem 4rem 3rem 4rem;
+}
+
 .buttons {
   display: flex;
   width: 30vh;
@@ -26,12 +31,45 @@ header img {
 }
 .buttons .redButtom {
   border-radius: 0.3rem;
-  padding: 0.4rem 0.75rem 0.4rem 0.75rem;
-  width: 20vh;
-  background-color: red;
+  padding: 0.4rem 0.3rem 0.4rem 0.3rem;
+  font-family: "Inter", system-ui;
+  width: 15vh;
+  background-color: #DF0712;
   color: aliceblue;
 }
 .buttons .whiteButtom {
   border-radius: 0.3rem;
-  padding: 0.4rem 0.75rem 0.4rem 0.75rem;
+  padding: 0.4rem 0.3rem 0.4rem 0.3rem;
+  font-family: "Inter", system-ui;
+  background-color: #000000;
+  color: aliceblue;
+  width: 10vh;
+  padding: 40px 60px;
+  border: solid 0.02rem aliceblue;
+}
+
+.titulos-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.titulos-section div {
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  font-family: "Inter", system-ui;
+}
+.titulos-section div h1 {
+  font-weight: 700;
+}
+.titulos-section div h2 {
+  font-weight: 400;
+}
+.titulos-section img {
+  width: 6.25rem;
+}
+
+.container-episodios {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

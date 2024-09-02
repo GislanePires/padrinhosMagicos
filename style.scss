@@ -1,6 +1,7 @@
 @mixin buttons{
     border-radius: 0.3rem;
-    padding: 0.4rem 0.75rem 0.4rem 0.75rem;
+    padding: 0.4rem 0.3rem 0.4rem 0.3rem;
+    font-family: "Inter", system-ui;
 }
 *{
     margin:0;
@@ -9,6 +10,7 @@
 }
 body{
     background-color: #181818;
+    font-family: "Inter", system-ui;
 }
 header{
     background-color: #000000;
@@ -21,6 +23,9 @@ header{
         width: 12vw;
     }
 }
+main{
+    padding: 3rem 4rem 3rem 4rem;
+}
 .buttons{
     display:flex;
     width: 30vh;
@@ -28,13 +33,43 @@ header{
 
     .redButtom{
         @include buttons();
-        width: 20vh;
-        background-color: red;
+        width: 15vh;
+        background-color:#DF0712;
         color: aliceblue;
-        // border-radius: 0.3rem;
-        // padding: 0.4rem 0.75rem 0.4rem 0.75rem;
     }
     .whiteButtom{
         @include buttons();
+        background-color: #000000;
+        color: aliceblue;
+        width: 10vh;
+        // padding: 0.4rem 1.5rem;
+        padding: 40px 60px;
+        border: solid 0.02rem aliceblue;
     }
+}
+.titulos-section{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+
+    div{
+        display:flex;
+        flex-direction: column;
+        color: #FFFFFF;
+        font-family: "Inter", system-ui;
+        
+        h1{
+            font-weight: 700;
+        }
+        h2{
+            font-weight: 400;
+        }
+    }
+    img{
+        width: 6.25rem;
+    }
+}
+.container-episodios{
+    display:flex;
+    align-items: center;
 }
